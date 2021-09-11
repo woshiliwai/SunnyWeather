@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SunnyWeather">
         <activity
+            android:name=".ui.weather.WeatherActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -20,6 +23,7 @@
             </intent-filter>
         </activity>
     </application>
+
     <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
