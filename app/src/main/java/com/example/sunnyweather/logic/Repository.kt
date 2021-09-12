@@ -3,6 +3,7 @@ package com.example.sunnyweather.logic
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
 import com.example.sunnyweather.SunnyWeatherApplication.Companion.context
+import com.example.sunnyweather.logic.dao.PlaceDao
 import com.example.sunnyweather.logic.model.Place
 import com.example.sunnyweather.logic.model.Weather
 import com.example.sunnyweather.logic.network.SunnyWeatherNetWork
@@ -16,6 +17,12 @@ import kotlin.coroutines.CoroutineContext
  * Created by lw on 2021/9/8 16:46.
  */
 object Repository {
+
+    fun savePlace(place: Place) = PlaceDao.savePlace(place)
+
+    fun getSavePlace() = PlaceDao.getSavedPlace()
+
+    fun isPlaceSaved() = PlaceDao.isPlaceSaved()
 
     fun searchPlaces(query: String) = fire(Dispatchers.IO) {
             val placeResponse = SunnyWeatherNetWork.searchPlaces(query)

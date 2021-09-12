@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/myapp/SunnyWeather/app/src/main/res/layout/activity_main.xml" value="0.26145833333333335" />
+        <entry key="..\:/myapp/SunnyWeather/app/src/main/res/layout/activity_weather.xml" value="0.26145833333333335" />
         <entry key="..\:/myapp/SunnyWeather/app/src/main/res/layout/forecast.xml" value="0.26145833333333335" />
         <entry key="..\:/myapp/SunnyWeather/app/src/main/res/layout/forecast_item.xml" value="0.26145833333333335" />
         <entry key="..\:/myapp/SunnyWeather/app/src/main/res/layout/fragment_place.xml" value="0.12715298885511653" />
